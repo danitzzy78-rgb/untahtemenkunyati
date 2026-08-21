@@ -2,8 +2,8 @@
    KONFIGURASI — GANTI SESUAI DATA KAMU
    ========================================================= */
 const CONFIG = {
-  recipientName: "Sayangku",
-  fromName: "Aku",
+  recipientName: "Utut",
+  fromName: "tetet",
   birthdayDate: "2026-09-01T00:00:00+07:00",
   togetherSince: "2023-02-14",
   photoCount: 6,
@@ -15,10 +15,94 @@ const CONFIG = {
     "Selalu diingat",
     "Bahagia itu ini",
   ],
-  letter1:
-    "Hari ini adalah hari yang paling spesial, karena hari ini adalah hari lahirnya orang yang paling berarti dalam hidupku.\n\nTerima kasih sudah selalu ada, sudah bikin hari-hariku jauh lebih hangat. Aku bersyukur banget bisa mengenalmu.",
+  letter1: `誕生日おめでとう。
+
+何気ない毎日を、いつの間にか忘れられない思い出に変えてしまう数少ない人の一人。それが君です。
+
+人はあまり語らないけれど、本当に特別なのは、いつもそばにいてくれる存在がいることなんだと思う。人生がぐちゃぐちゃに感じる日でも話を聞いてくれる人。お腹が痛くなるくらい一緒に笑える人。そして、何も話さなくても気まずさを感じず、ただ隣に座っていられる人。
+
+君は、僕にとってまさにそんな存在です。そして、そのことに心から感謝しています。普段はなかなか口にしないけれど、本当にありがとう。
+
+友情って、みんなが見るような楽しい瞬間だけでできているものじゃない。夜遅くまで続いた意味のないようで意味のある会話や、二人にしか通じないくだらない冗談、人生に迷いながらも一緒に前へ進もうとしてきた時間、そして言葉にしなくても支え合ってきた瞬間。その積み重ねこそが、本当の友情なんだと思う。
+
+これまでの思い出を振り返ると、一冊の本をめくっているような気持ちになる。ページを重ねるたびに面白くなっていく物語。たくさんの失敗や笑い、成長、そして今の僕たちを作ってくれた数え切れない出来事が詰まっている。
+
+何もかもがうまくいくように思えた時も、未来が見えなくて不安だった時も、君はいつもそこにいてくれた。そして不思議なくらい、その存在だけでどちらの時間も少しだけ乗り越えやすくなっていた。
+
+君の素敵なところは、飾らないことだと思う。完璧な人間になろうとするんじゃなくて、ただ君らしくいる。その自然体な姿が、周りの人を安心させていることに、きっと君自身は気づいていない。
+
+僕は、本当に願っている。誰もが人生で一度くらい、僕たちのような友情に出会えたらいいのに、と。
+
+君は気づかないうちに、僕にたくさんのことを教えてくれた。焦らずにいること。どんなに大変な時でも笑える理由を見つけること。そして、思い通りにいかない時でも前へ進み続けること。
+
+人生には説明書なんてない。誰だって、いつも正しい答えを知っているわけじゃない。でも、隣を歩いてくれる誰かがいるだけで、その道のりはずっと軽く感じられる。
+
+だから今日という日は、ただ君がまた一つ歳を重ねる日じゃない。君という人そのものと、君が周りの人たちに与えている温かさや優しさを祝う日でもある。
+
+少しだけ印象を残して通り過ぎる人もいる。でも君は、ずっと心に残る思い出をくれる人だ。
+
+これからの一年が、君に思いがけないチャンスを運んできますように。自分自身を誇らしく思える瞬間にたくさん出会えますように。そして、自分が思っている以上に強く、可能性に満ちた人なんだと何度も気づける一年になりますように。
+
+夢見る自分へ向かって成長し続けながらも、君らしさだけは失わないでいてほしい。優しさも、ユーモアも、頼まれなくても誰かを気にかけられるその心も、全部そのままでいてほしい。
+
+これからの日々が、心から笑える時間や、新しい刺激をくれる出会い、そして「今、自分はちゃんとここにいていいんだ」と思える穏やかな瞬間であふれますように。
+
+そして、もし人生が君に試練を与えたとしても、一人で抱え込まないでほしい。君が思っている以上に、君を大切に思っている人たちはたくさんいるのだから。
+
+誕生日って不思議だよね。一度立ち止まって、ここまで歩いてきた道を振り返る日でもある。失敗も、学びも、成功も、思いがけない出来事も、その全部が今の君を作っている。
+
+でも同時に、それは物語がまだ終わっていないことを教えてくれる日でもある。これから先には、まだ書かれていないページがたくさん待っている。
+
+僕はこれから君がどんな場所へ進んでいくのか、どんな夢を叶えていくのか、そして何年後かにまた笑いながら思い返せる新しい思い出がどれだけ増えていくのか、本当に楽しみにしている。
+
+どれだけ時間が流れても、どれだけ忙しくなっても、この友情だけはずっと大切にしていけたら嬉しい。こんな関係は簡単に代わりが見つかるものじゃない。だからこそ、これからも大事に育てていきたい。
+
+最後に、ただ一つ伝えたい。
+
+君のような友達を持てる人は、本当に幸せだと思う。
+
+今までたくさんの思い出をありがとう。そして、これから一緒に作っていく思い出も、どうかよろしく。
+
+改めて、誕生日おめでとう。
+
+新しい一年が、成長と穏やかな日々、思いがけない幸せ、そして「自分がこの世界にいる意味」を何度も感じられるような、そんな素晴らしい一年になりますように。`,
+  letter1Translation: `Selamat ulang tahun untuk salah satu dari sedikit orang yang entah bagaimana bisa mengubah hari-hari biasa jadi cerita yang layak dikenang.
+
+Menurutku orang jarang benar-benar membicarakan betapa spesialnya punya seseorang yang tetap ada, seseorang yang mau mendengarkan saat hidup terasa berantakan, seseorang yang tertawa bersamamu sampai perutmu sakit, dan seseorang yang bisa duduk diam bersamamu tanpa terasa canggung. Itulah kamu dalam hidupku, dan jujur aku bersyukur dengan cara yang mungkin jarang aku ucapkan.
+
+Persahabatan bukan cuma soal momen seru yang semua orang lihat, tapi juga soal dukungan diam-diam, obrolan larut malam yang random, lelucon konyol yang cuma masuk akal di antara kita, saat-saat ketika kita sama-sama bingung soal hidup tapi entah bagaimana bisa menemukan jalan bareng.
+
+Saat aku melihat kembali semua kenangan yang kita buat, rasanya seperti membalik-balik halaman buku yang makin lama makin bagus, penuh kekacauan, pertumbuhan, dan momen-momen yang membentuk kita jadi diri kita hari ini.
+
+Kamu ada di sana saat masa-masa di atas, ketika semuanya terasa mungkin, dan saat masa-masa di bawah, ketika semuanya terasa tidak pasti, dan entah bagaimana kehadiranmu membuat keduanya lebih mudah dihadapi.
+
+Menurutku salah satu hal terbaik tentang kamu adalah betapa nyatanya kamu, kamu tidak pura-pura sempurna, kamu hanya jadi dirimu sendiri, dan itu membuat orang nyaman di dekatmu tanpa kamu sadari. Aku sungguh berharap semua orang bisa merasakan persahabatan seperti yang kita punya setidaknya sekali seumur hidup.
+
+Kamu mengajariku banyak hal tanpa sengaja, seperti bagaimana caranya sabar, bagaimana melihat hal-hal lucu bahkan di momen penuh stres, dan bagaimana terus maju bahkan saat semuanya tidak berjalan sesuai rencana.
+
+Hidup tidak datang dengan buku petunjuk, dan tidak ada dari kita yang benar-benar tahu apa yang kita lakukan setiap saat, tapi punya seseorang yang berjalan di sampingmu membuat perjalanan terasa lebih ringan.
+
+Itu sebabnya hari ini bukan cuma tentang merayakan satu tahun lagi dalam hidupmu, tapi juga tentang menghargai sosokmu dan energi positif yang kamu bawa ke hidup orang-orang di sekitarmu. Ada orang yang meninggalkan kesan kecil, tapi kamu meninggalkan kenangan yang bertahan lama.
+
+Aku berharap tahun yang akan datang ini mengejutkanmu dengan kesempatan yang tidak kamu duga, momen yang membuatmu bangga pada dirimu sendiri, dan pengalaman yang mengingatkanmu betapa mampu dan kuatnya dirimu sebenarnya.
+
+Aku berharap kamu terus tumbuh menjadi orang yang kamu impikan, tanpa kehilangan bagian-bagian dirimu yang membuatmu unik: kebaikanmu, humormu, caramu peduli pada orang lain bahkan saat kamu tidak harus melakukannya.
+
+Aku berharap hari-hari ke depan membawa tawa yang terasa tulus, obrolan yang menginspirasimu, dan momen damai saat kamu sadar kamu ada tepat di tempat yang seharusnya.
+
+Dan bahkan kalau hidup melempar tantangan ke arahmu, aku berharap kamu ingat kamu tidak menghadapinya sendirian, karena akan selalu ada orang-orang yang menghargaimu lebih dari yang mungkin kamu sadari.
+
+Ulang tahun itu lucu, mereka membuat kita berhenti sejenak dan melihat perjalanan sejauh ini, kesalahan-kesalahan, pelajaran, kemenangan, tikungan tak terduga, dan semua hal yang membantu membentuk kita jadi diri kita hari ini. Tapi mereka juga mengingatkan bahwa ceritanya masih berlanjut, dan masih banyak halaman yang menunggu untuk ditulis.
+
+Aku benar-benar bersemangat melihat ke mana hidup akan membawamu selanjutnya, tujuan apa yang akan kamu kejar, mimpi apa yang akan kamu wujudkan, dan kenangan baru apa yang nanti akan kita tertawakan bertahun-tahun dari sekarang.
+
+Seberapa pun banyak waktu yang berlalu atau seberapa sibuk hidup, aku berharap kita selalu menjaga koneksi yang memulai semua kenangan ini, karena persahabatan seperti ini bukan sesuatu yang bisa begitu saja diganti, tapi sesuatu yang harus dihargai, dijaga, dan dibawa terus bersamamu.
+
+Jadi hari ini, aku hanya ingin bilang terima kasih karena sudah menjadi tipe teman yang beruntung dimiliki orang, terima kasih untuk semua kenangan yang sudah kita buat, dan terima kasih sebelumnya untuk kenangan-kenangan yang belum kita alami.
+
+Selamat ulang tahun, dan semoga tahun baru dalam hidupmu ini dipenuhi pertumbuhan, kedamaian, kebahagiaan tak terduga, dan momen-momen yang mengingatkanmu bahwa kehadiranmu di dunia ini benar-benar lebih berarti dari yang kamu kira.`,
   letter2:
-    "Aku doain kamu selalu sehat, selalu bahagia, dan selalu jadi versi terbaik dari dirimu sendiri.\n\nMakasih sudah jadi kamu. Selamat ulang tahun, sayangku. Aku sayang kamu, sekarang dan nanti.",
+    "Selamat ulang tahun, Utut. Makasih sudah jadi kamu, sekarang dan seterusnya.",
   timeline: [
     {
       date: "Awal Cerita",
@@ -31,8 +115,8 @@ const CONFIG = {
     { date: "Hari Ini", text: "Merayakan hari lahirmu dengan penuh syukur." },
   ],
   songs: [
-    { name: "Laskar Pelangi", file: "musik/laskar-pelangi.mp3" },
-    { name: "The One That Got Away", file: "musik/the-one-that-got-away.mp3" },
+    { name: "Laskar Pelangi", file: "musik/laskar-pelangi.mp4" },
+    { name: "The One That Got Away", file: "musik/the-one-that-got-away.mp4" },
   ],
 };
 
@@ -50,7 +134,8 @@ slides.push({ type: "greeting" });
 slides.push({
   type: "letter",
   text: CONFIG.letter1,
-  sign: `— ${CONFIG.fromName}, dengan sayang`,
+  translation: CONFIG.letter1Translation,
+  sign: `— ${CONFIG.fromName}`,
   showCounter: true,
 });
 slides.push({ type: "timeline" });
@@ -61,7 +146,7 @@ slides.push({ type: "video", side: "b" });
 slides.push({
   type: "letter",
   text: CONFIG.letter2,
-  sign: `— dari ${CONFIG.fromName}, untuk kamu`,
+  sign: `— dari ${CONFIG.fromName}, untuk ${CONFIG.recipientName}`,
   eyebrow: "Sebelum Ditutup",
   title: "Satu Doa Terakhir",
 });
@@ -128,15 +213,27 @@ function renderSlide(s, i) {
     el.innerHTML = `<div class="slide-inner">
       <div class="eyebrow" style="margin-bottom:14px;">${s.eyebrow || "Sebuah Surat"}</div>
       <div class="card">
-        <h2 style="font-size:1.3rem;color:var(--gold-light);margin-bottom:12px;">${s.title || "Untukmu"}</h2>
-        <div class="letter-body" data-fulltext="${encodeURIComponent(s.text)}" id="letter-${i}"></div>
+        <div class="card-header">
+          <h2 style="font-size:1.3rem;color:var(--gold-light);">${s.title || "Untukmu"}</h2>
+          ${
+            s.translation
+              ? `<div class="lang-toggle-wrap">
+            <button class="lang-toggle-btn" id="lang-toggle-${i}" data-stack="letter-stack-${i}" title="Terjemahkan ke Bahasa Indonesia">🌐<span class="lang-tag" id="lang-tag-${i}">JP</span></button>
+            <span class="lang-toggle-label" id="lang-toggle-label-${i}">Translate ID</span>
+          </div>`
+              : ""
+          }
+        </div>
+        <div class="letter-stack" id="letter-stack-${i}">
+          <div class="letter-lang lang-jp active" data-fulltext="${encodeURIComponent(s.text)}" id="letter-${i}"></div>
+          ${s.translation ? `<div class="letter-lang lang-id" data-fulltext="${encodeURIComponent(s.translation)}" id="letter-id-${i}"></div>` : ""}
+        </div>
         <div class="signature">${s.sign}</div>
       </div>
       ${
         s.showCounter
           ? `<div class="love-counter">
-        <span class="n" id="days-together">0000</span>
-        <span class="t">hari kita bersama,<br>dan terus bertambah</span>
+        <span class="t">Setiap hari kita bersama,<br>dan terus tumbuh</span>
       </div>`
           : ""
       }
@@ -160,7 +257,7 @@ function renderSlide(s, i) {
     el.innerHTML = `<div class="slide-inner">
       <div class="eyebrow" style="margin-bottom:18px;">Galeri Kenangan</div>
       <div class="polaroid">
-        <div class="ph"><img src="foto/foto-${s.index}.jpg" alt="${cap}" onerror="this.parentElement.innerHTML='Ganti dengan<br>foto/foto-${s.index}.jpg'"></div>
+        <div class="ph"><img src="Foto/foto-${s.index}.jpeg" alt="${cap}" onerror="this.parentElement.innerHTML='Ganti dengan<br>Foto/foto-${s.index}.jpeg'"></div>
         <div class="cap">${cap}</div>
       </div>
       <div class="photo-counter">Foto ${s.index} / ${CONFIG.photoCount}</div>
@@ -168,14 +265,13 @@ function renderSlide(s, i) {
   } else if (s.type === "video") {
     const label =
       s.side === "a" ? "Side A — Pesan Pertama" : "Side B — Pesan Kedua";
-    const file = s.side === "a" ? "video/pesan-1.mp4" : "video/pesan-2.mp4";
+    const file = s.side === "a" ? "vidio/pesan-1.mp4" : "vidio/pesan-2.mp4";
     el.innerHTML = `<div class="slide-inner">
       <div class="eyebrow" style="margin-bottom:16px;">Sebuah Mixtape</div>
       <div class="cassette">
         <div class="cassette-top"><span class="cassette-label">${label}</span></div>
         <div class="reel-row"><div class="reel" id="reel-l-${s.side}"></div><div class="reel" id="reel-r-${s.side}"></div></div>
         <video controls id="video-${s.side}"><source src="${file}" type="video/mp4">Video tidak didukung.</video>
-        <p class="video-note">Ganti file <code>${file}</code> dengan video aslimu.</p>
       </div>
     </div>`;
   } else if (s.type === "final") {
@@ -259,19 +355,7 @@ function onEnter(i) {
   if (s.type === "letter" && !typed.has(i)) {
     typed.add(i);
     const el = document.getElementById("letter-" + i);
-    const text = decodeURIComponent(el.dataset.fulltext);
-    let c = 0;
-    el.innerHTML = '<span class="cursor-blink"></span>';
-    const iv = setInterval(() => {
-      c++;
-      el.innerHTML =
-        escapeHtml(text.slice(0, c)).replace(/\n/g, "<br>") +
-        '<span class="cursor-blink"></span>';
-      if (c >= text.length) {
-        clearInterval(iv);
-      }
-    }, 18);
-    if (s.showCounter) updateLoveCounter();
+    typeInto(el, decodeURIComponent(el.dataset.fulltext), 18);
   }
   if (s.type === "countdown") {
     startCountdown();
@@ -289,6 +373,57 @@ function escapeHtml(str) {
     /[&<>]/g,
     (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;" })[c],
   );
+}
+
+function typeInto(el, text, speed) {
+  let c = 0;
+  el.innerHTML = '<span class="cursor-blink"></span>';
+  const iv = setInterval(() => {
+    c++;
+    el.innerHTML =
+      escapeHtml(text.slice(0, c)).replace(/\n/g, "<br>") +
+      '<span class="cursor-blink"></span>';
+    if (c >= text.length) {
+      el.innerHTML = escapeHtml(text).replace(/\n/g, "<br>");
+      clearInterval(iv);
+    }
+  }, speed);
+}
+
+/* Toggle bahasa surat (JP <-> ID) */
+function toggleLetterLang(btn) {
+  const stack = document.getElementById(btn.dataset.stack);
+  if (!stack) return;
+  const jp = stack.querySelector(".lang-jp");
+  const idEl = stack.querySelector(".lang-id");
+  if (!idEl) return;
+  const showingJp = jp.classList.contains("active");
+  const cur = showingJp ? jp : idEl;
+  const nxt = showingJp ? idEl : jp;
+
+  cur.classList.add("fade-out");
+  setTimeout(() => {
+    cur.classList.remove("active", "fade-out");
+    nxt.classList.add("active", "fade-in");
+    setTimeout(() => nxt.classList.remove("fade-in"), 500);
+    if (!nxt.dataset.typed) {
+      nxt.dataset.typed = "1";
+      typeInto(
+        nxt,
+        decodeURIComponent(nxt.dataset.fulltext),
+        showingJp ? 10 : 18,
+      );
+    }
+  }, 250);
+
+  const tag = document.getElementById(
+    btn.dataset.stack.replace("letter-stack-", "lang-tag-"),
+  );
+  if (tag) tag.textContent = showingJp ? "ID" : "JP";
+  const label = document.getElementById(
+    btn.dataset.stack.replace("letter-stack-", "lang-toggle-label-"),
+  );
+  if (label) label.textContent = showingJp ? "Translate ID" : "Bahasa Jepang";
 }
 
 /* Lock clock */
@@ -342,15 +477,6 @@ function stopCountdown() {
   }
 }
 
-/* Love counter */
-function updateLoveCounter() {
-  const el = document.getElementById("days-together");
-  if (!el) return;
-  const start = new Date(CONFIG.togetherSince).getTime();
-  const days = Math.max(0, Math.floor((Date.now() - start) / 86400000));
-  el.textContent = String(days).padStart(4, "0");
-}
-
 /* Gift open */
 document.addEventListener("click", (e) => {
   const box = e.target.closest("#gift-box");
@@ -372,6 +498,12 @@ document.addEventListener("click", (e) => {
   const replay = e.target.closest("#replay-btn");
   if (replay) {
     goTo(0);
+  }
+
+  const langBtn = e.target.closest(".lang-toggle-btn");
+  if (langBtn) {
+    e.stopPropagation();
+    toggleLetterLang(langBtn);
   }
 });
 
@@ -436,6 +568,9 @@ musicBtn.addEventListener("dblclick", (ev) => {
   ev.stopPropagation();
   songIdx = (songIdx + 1) % CONFIG.songs.length;
   audioSource.src = CONFIG.songs[songIdx].file;
+  audioSource.type = CONFIG.songs[songIdx].file.endsWith(".mp4")
+    ? "audio/mp4"
+    : "audio/mpeg";
   audio.load();
   if (musicStarted) audio.play().catch(() => {});
 });
