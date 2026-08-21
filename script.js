@@ -310,13 +310,20 @@ function updateArrows() {
     .getElementById("nav-next")
     .classList.toggle("hidden", current === slides.length - 1);
 }
+let navLock = false;
 function goTo(i) {
+  if (navLock) return;
   if (i < 0 || i >= slides.length) return;
+  navLock = true;
   current = i;
   track.style.transform = `translateX(-${current * 100}%)`;
   updateProgress();
   updateArrows();
   onEnter(current);
+  pauseOtherVideos(slides[current]);
+  setTimeout(() => {
+    navLock = false;
+  }, 480);
 }
 function next() {
   if (current < slides.length - 1) goTo(current + 1);
@@ -373,23 +380,21 @@ function onEnter(i) {
     photoSongSwitched = true;
     switchSong(1);
   }
+}
 
-  /* Slide video: matikan dulu musik latar biar suara video jelas */
-  if (s.type === "video") {
-    if (!audio.paused) {
-      audio.pause();
-      musicBtn.classList.remove("spin");
-      musicPausedForVideo = true;
+/* Pastikan cuma video di slide yang sedang aktif yang boleh main;
+   video lain (termasuk yang ditinggalkan) otomatis dihentikan.
+   Ini juga otomatis memicu event 'pause' -> musik latar lanjut lagi. */
+function pauseOtherVideos(activeSlide) {
+  const activeVideoId =
+    activeSlide && activeSlide.type === "video"
+      ? `video-${activeSlide.side}`
+      : null;
+  document.querySelectorAll("video").forEach((v) => {
+    if (v.id !== activeVideoId && !v.paused) {
+      v.pause();
     }
-  } else if (musicPausedForVideo) {
-    musicPausedForVideo = false;
-    if (musicStarted) {
-      audio
-        .play()
-        .then(() => musicBtn.classList.add("spin"))
-        .catch(() => {});
-    }
-  }
+  });
 }
 function escapeHtml(str) {
   return str.replace(
@@ -399,16 +404,21 @@ function escapeHtml(str) {
 }
 
 function typeInto(el, text, speed) {
+  if (el._typeIv) {
+    clearInterval(el._typeIv);
+    el._typeIv = null;
+  }
   let c = 0;
   el.innerHTML = '<span class="cursor-blink"></span>';
-  const iv = setInterval(() => {
+  el._typeIv = setInterval(() => {
     c++;
     el.innerHTML =
       escapeHtml(text.slice(0, c)).replace(/\n/g, "<br>") +
       '<span class="cursor-blink"></span>';
     if (c >= text.length) {
       el.innerHTML = escapeHtml(text).replace(/\n/g, "<br>");
-      clearInterval(iv);
+      clearInterval(el._typeIv);
+      el._typeIv = null;
     }
   }, speed);
 }
@@ -530,7 +540,7 @@ document.addEventListener("click", (e) => {
   }
 });
 
-/* Video reel spin */
+/* Video reel spin + kontrol musik latar */
 document.addEventListener(
   "play",
   (e) => {
@@ -538,21 +548,33 @@ document.addEventListener(
       const side = e.target.id.split("-")[1];
       document.getElementById("reel-l-" + side)?.classList.add("spin");
       document.getElementById("reel-r-" + side)?.classList.add("spin");
+      if (!audio.paused) {
+        audio.pause();
+        musicBtn.classList.remove("spin");
+        musicPausedForVideo = true;
+      }
     }
   },
   true,
 );
-document.addEventListener(
-  "pause",
-  (e) => {
-    if (e.target.tagName === "VIDEO") {
-      const side = e.target.id.split("-")[1];
-      document.getElementById("reel-l-" + side)?.classList.remove("spin");
-      document.getElementById("reel-r-" + side)?.classList.remove("spin");
+function onVideoStopped(e) {
+  if (e.target.tagName === "VIDEO") {
+    const side = e.target.id.split("-")[1];
+    document.getElementById("reel-l-" + side)?.classList.remove("spin");
+    document.getElementById("reel-r-" + side)?.classList.remove("spin");
+    if (musicPausedForVideo) {
+      musicPausedForVideo = false;
+      if (musicStarted) {
+        audio
+          .play()
+          .then(() => musicBtn.classList.add("spin"))
+          .catch(() => {});
+      }
     }
-  },
-  true,
-);
+  }
+}
+document.addEventListener("pause", onVideoStopped, true);
+document.addEventListener("ended", onVideoStopped, true);
 
 /* =========================================================
    MUSIK
