@@ -367,6 +367,29 @@ function onEnter(i) {
   } else {
     stopFireworks();
   }
+
+  /* Masuk galeri foto pertama kali -> ganti musik ke lagu ke-2 */
+  if (s.type === "photo" && s.index === 1 && !photoSongSwitched) {
+    photoSongSwitched = true;
+    switchSong(1);
+  }
+
+  /* Slide video: matikan dulu musik latar biar suara video jelas */
+  if (s.type === "video") {
+    if (!audio.paused) {
+      audio.pause();
+      musicBtn.classList.remove("spin");
+      musicPausedForVideo = true;
+    }
+  } else if (musicPausedForVideo) {
+    musicPausedForVideo = false;
+    if (musicStarted) {
+      audio
+        .play()
+        .then(() => musicBtn.classList.add("spin"))
+        .catch(() => {});
+    }
+  }
 }
 function escapeHtml(str) {
   return str.replace(
@@ -539,6 +562,22 @@ const audioSource = document.getElementById("audio-source");
 const musicBtn = document.getElementById("music-btn");
 let songIdx = 0,
   musicStarted = false;
+let photoSongSwitched = false,
+  musicPausedForVideo = false;
+
+function switchSong(idx) {
+  songIdx = idx % CONFIG.songs.length;
+  audioSource.src = CONFIG.songs[songIdx].file;
+  audioSource.type = CONFIG.songs[songIdx].file.endsWith(".mp4")
+    ? "audio/mp4"
+    : "audio/mpeg";
+  audio.load();
+  if (musicStarted)
+    audio
+      .play()
+      .then(() => musicBtn.classList.add("spin"))
+      .catch(() => {});
+}
 
 function tryStartMusic() {
   if (musicStarted) return;
@@ -566,13 +605,7 @@ musicBtn.addEventListener("click", (ev) => {
 });
 musicBtn.addEventListener("dblclick", (ev) => {
   ev.stopPropagation();
-  songIdx = (songIdx + 1) % CONFIG.songs.length;
-  audioSource.src = CONFIG.songs[songIdx].file;
-  audioSource.type = CONFIG.songs[songIdx].file.endsWith(".mp4")
-    ? "audio/mp4"
-    : "audio/mpeg";
-  audio.load();
-  if (musicStarted) audio.play().catch(() => {});
+  switchSong(songIdx + 1);
 });
 /* mulai musik begitu user pertama kali menyentuh layar (lock screen) */
 document
